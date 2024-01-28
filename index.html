@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Yummy</title>
+        <link rel="icon" href="images/logo.png" type="image">
+    </head>
+    <body>
+
+        <div id="loading">
+            <span class="loader"></span>
+        </div>
+
+        <div id="box-container" class="box">
+            <div id="box-element">
+                <div class="diiv">
+                    <ul>
+                        <li><a href="#searches" id="s" class="aa">Search</a></li>
+                        <li><a href="#categories" id="c" class="aa">Categories</a></li>
+                        <li><a href="#areas" id="a" class="aa">Area</a></li>
+                        <li><a href="#ingredients" id="i" class="aa">Ingredients</a></li>
+                        <li><a href="#contacts-us" id="co" class="aa">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="div1">
+                    <div class="div">
+                        <i class="fa-brands fa-facebook ps-3"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe "></i>
+                    </div>
+                    <p class="ps-3">Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+            <div id="box-open">
+                <img src="images/logo.png" alt="">
+                <span class="">
+                    <i class="open fa-solid fa-xmark"></i>
+                </span>
+                <div class="div d-flex flex-column">
+                    <i class="fa-solid fa-globe "></i>
+                <i class="fa-solid fa-share-nodes py-2"></i>
+                </div>
+            </div>
+        </div>
+
+       <div class="main">
+
+        <section id="searches">
+            <div class="container py-5">
+                <div class="row "  id="search">
+                    <div class="col-md-6">
+                        <div class="inputs">
+                            <input id="s-name" onkeyup="searchByName(this.value)" type="text" placeholder="Search By Name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="inputs">
+                            <input id="s-letter" onkeyup="searchByLetter(this.value)" type="text" placeholder="Search By First Letter" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="main-meals">
+            <div class="container py-5">
+                <div class="row g-4" id="main-meal">
+                </div>
+            </div>
+        </section>
+
+        <section id="search-letter">
+            <div class="container py-5">
+                <div class="row g-4" id="search-l">
+                </div>
+            </div>
+        </section>
+
+        <section id="items">
+            <div class="container py-5">
+                <div class="row" id="item">
+                </div>
+            </div>
+        </section>
+
+        <section id="meals">
+            <div class="container py-5">
+                <div class="row g-4" id="meal">
+                </div>
+            </div>
+        </section>
+
+        <section id="categories">
+            <div class="container py-5">
+                <div class="row g-4" id="category">
+                </div>
+            </div>
+        </section>
+
+        <section id="areas">
+            <div class="container py-5">
+                <div class="row g-4" id="area">
+                </div>
+            </div>
+        </section>
+
+        <section id="ingredients">
+            <div class="container py-5">
+                <div class="row g-4" id="ingredient">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts-us">
+            <div class="container py-5">
+                <div class="row "  id="contact-us">
+                    <div class="col-md-5">
+                        <div class="inputs-co">
+                            <input id="name" type="text" placeholder="Enter Your Name" class="form-control">
+                        </div>
+                        <p id="result-name"></p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="inputs-co">
+                            <input id="email" type="email" placeholder="Enter Your Email" class="form-control">
+                        </div>
+                        <p id="result-email"></p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="inputs-co">
+                            <input id="number" type="number" placeholder="Enter Your Phone" class="form-control">
+                        </div>
+                        <p id="result-number"></p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="inputs-co">
+                            <input id="age" type="number" placeholder="Enter Your Age" class="form-control">
+                        </div>
+                        <p id="result-age"></p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="inputs-co">
+                            <input id="password" type="password" placeholder="Enter Your Password" class="form-control">
+                        </div>
+                        <p id="result-password"></p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="inputs-co">
+                            <input id="repassword" type="password" placeholder="Enter Your Repassword" class="form-control">
+                        </div>
+                        <p id="result-repassword"></p>
+                    </div>
+                </div>
+                <div class="div d-flex justify-content-center">
+                    <button id="sub-button" class="btn btn-danger">submit</button>
+                </div>
+            </div>
+        </section>
+       </div>
+
+        <script src="js/jquery-3.7.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
